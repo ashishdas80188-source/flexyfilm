@@ -1,0 +1,15 @@
+{
+  "name": "flexyfilm",
+  "version": "1.0.0",
+  "description": "FlexyFilm - Premium Movie Streaming Platform (MERN)",
+  "scripts": {
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
